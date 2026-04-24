@@ -8,9 +8,9 @@ int main() {
     for (int i = 0; i < n - 1; i++) {
         for (int j = 0; j < n - 1 - i; j++) {
             if (strcmp(names[j], names[j+1]) > 0) {
-                char *temp = names[j];
+                char *c = names[j];
                 names[j] = names[j+1];
-                names[j+1] = temp;
+                names[j+1] = c;
             }
         }
     }
